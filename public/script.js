@@ -1,10 +1,7 @@
+const searchElement = document.querySelector('[data-city-search]')
+console.log(searchElement)
 
-function initMap() {
-    const searchElement = document.getElementById('data-city-search')
-    console.log(searchElement)
-    
-    const searchBox = new google.maps.places.SearchBox(searchElement)
-}
+const searchBox = new google.maps.places.SearchBox(searchElement)
 
 
 searchBox.addListener('places_changed', () => {
@@ -26,4 +23,4 @@ searchBox.addListener('places_changed', () => {
     }).then(res => res.JSON()).then(data => {
         setWeatherData(data, place.formatted_address)
     })
-}) 
+})
