@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp_api_withnodeserv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealgabryx/Weather-App--Node-Js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealgabryx/Weather-App--Node-Js/issues"
+  },
+  "homepage": "https://github.com/therealgabryx/Weather-App--Node-Js#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
