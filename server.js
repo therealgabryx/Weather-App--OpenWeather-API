@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.post('/weather', (request, response) => {
-
+    console.log(request.body)
 })
 
 app.listen('3000', () => {
